@@ -5,7 +5,7 @@ import Calculator from './components/Calculator';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Calculator/>
+    <Calculator/ >
   </React.StrictMode>,
   document.getElementById('root'),
 );
