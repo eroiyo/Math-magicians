@@ -1,9 +1,8 @@
 import React from 'react';
 
-/* eslint-disable prefer-stateless-function */
+/* eslint-disable react/prefer-stateless-function */
 
 const Calculator = class extends React.Component {
-  static displayName = 'Calculator';
   render() {
     return (
       <div className="calculator">
@@ -37,5 +36,7 @@ const Calculator = class extends React.Component {
     );
   }
 };
+
+Calculator.displayName = "Calculator";
 
 export default Calculator;
