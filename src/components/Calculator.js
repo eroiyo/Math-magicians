@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Calculator extends React.Component {
+const Calculator = class extends React.Component {
   render() {
     return (
       <div className="calculator">
@@ -14,7 +14,7 @@ class Calculator extends React.Component {
           <button type="button" className="option" value="7"><span>7</span></button>
           <button type="button" className="option" value="8"><span>8</span></button>
           <button type="button" className="option" value="9"><span>9</span></button>
-          <button type="button" class="option blue" className="button" value="X"><span>X</span></button>
+          <button type="button" className="option blue" className="button" value="X"><span>X</span></button>
 
           <button type="button" className="option" value="4"><span>4</span></button>
           <button type="button" className="option" value="5"><span>5</span></button>
