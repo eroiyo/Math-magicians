@@ -37,6 +37,6 @@ const Calculator = class extends React.Component {
   }
 };
 
-Calculator.displayName = "Calculator";
+Calculator.displayName = 'Calculator';
 
 export default Calculator;
