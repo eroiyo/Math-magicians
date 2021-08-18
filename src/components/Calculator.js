@@ -1,9 +1,10 @@
 import React from 'react';
 
-const Calculator = class extends React.Component {
+const Calculator = class extends React.PureComponent {
   constructor(props) {
     super(props);
   }
+  
   render() {
     return (
       <div className="calculator">
@@ -35,8 +36,8 @@ const Calculator = class extends React.Component {
         </div>
       </div>
     );
-  };
-}
+  }
+};
 
 Calculator.displayName = 'Calculator';
 
