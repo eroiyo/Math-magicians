@@ -1,18 +1,19 @@
-import { render } from '@testing-library/react';
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import './App.css';
 import Calculator from './components/Calculator';
 
-const App = class extends Component {
+const App = class extends PureComponent {
   render() {
     return (
       <div className="App">
-      <div className="App-body">
-        <Calculator />
+        <div className="App-body">
+          <Calculator />
+        </div>
       </div>
-    </div>
     );
   }
 };
+
+App.displayName = 'App';
 
 export default App;
