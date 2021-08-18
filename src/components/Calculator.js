@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const Calculator = class extends React.PureComponent {
+const Calculator = class extends Component {
   render() {
     return (
       <div className="calculator">

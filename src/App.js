@@ -1,10 +1,10 @@
 import { render } from '@testing-library/react';
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import Calculator from './components/Calculator';
 
-const App = () => {
-  render();
+const App = class extends Component {
+  render(){
   return (
     <div className="App">
       <div className="App-body">
@@ -12,6 +12,7 @@ const App = () => {
       </div>
     </div>
   );
+  }
 };
 
 export default App;
