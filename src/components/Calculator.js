@@ -1,7 +1,6 @@
 import React from 'react';
 
 const Calculator = class extends React.PureComponent {
-
   render() {
     return (
       <div className="calculator">
