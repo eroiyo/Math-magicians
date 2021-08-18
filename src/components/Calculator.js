@@ -1,10 +1,8 @@
 import React from 'react';
 
-/* eslint-disable react/prefer-stateless-function */
-
 const Calculator = class extends React.Component {
   render() {
-    return (
+    const design (
       <div className="calculator">
         <div className="screen">0</div>
         <div className="options">
@@ -34,6 +32,7 @@ const Calculator = class extends React.Component {
         </div>
       </div>
     );
+    return design;
   }
 };
 
