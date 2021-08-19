@@ -1,16 +1,14 @@
 import React, { Component } from 'react';
 import Keyboard from './Keyboard';
-import Screen from './Screen'
-import calculate from '../../logic/calculate'
-
-function isNumber(item) {
-  return !!item.match(/[0-9]+/);
-}
+import Screen from './Screen';
+import calculate from '../../logic/calculate';
 
 const Calculator = class extends Component {
   constructor(props) {
     super(props);
-    this.state = { total: '0', next: null, operation: null, total: '0' };
+    this.state = {
+      total: '0', next: null, operation: null, total: '0' 
+    };
   }
 
   handleClick = (buttonName) => {
@@ -22,19 +20,20 @@ const Calculator = class extends Component {
           next: null,
           operation: null,
         };
-        break
+        break;
       default:
-        total = calculate(this.state, buttonName)
+        total = calculate(this.state, buttonName);
         break;
     }
-    this.setState(total)
+  this.setState(total);
 
   };
 
   render() {
+    const theState = this.state;
     return (
       <div className="calculator">
-        <Screen total={!this.state.next ? this.state.total : this.state.next} />
+        <Screen total={!theState.next ? theState.total : theState.next} />
         <Keyboard onButtonClick={this.handleClick} />
       </div>
     );

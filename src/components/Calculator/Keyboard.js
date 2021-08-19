@@ -5,10 +5,11 @@ const Keyboard = class extends Component {
     super(props);
     this.onButtonClick = props.onButtonClick;
   }
+  
   render() {
     return (
-      <div className="options" >
-        <button className="option blue" onClick={(e) => this.onButtonClick(e.currentTarget.value)} type="button" value="AC" ><span>AC</span></button>
+      <div className="options">
+        <button className="option blue" onClick={(e) => this.onButtonClick(e.currentTarget.value)} type="button" value="AC"><span>AC</span></button>
         <button className="option blue" onClick={(e) => this.onButtonClick(e.currentTarget.value)} type="button" value="+/-"><span>+/-</span></button>
         <button className="option blue" onClick={(e) => this.onButtonClick(e.currentTarget.value)} type="button" value="%"><span>%</span></button>
         <button className="option blue" onClick={(e) => this.onButtonClick(e.currentTarget.value)} type="button" value="÷"><span>÷</span></button>
