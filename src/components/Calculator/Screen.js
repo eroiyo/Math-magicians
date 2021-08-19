@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 const Screen = class extends Component {
   constructor(props) {
@@ -7,7 +7,7 @@ const Screen = class extends Component {
   }
 
   render() {
-      const theprops=this.props
+    const theprops = this.props;
     return (
       <div className="screen">{theprops.total}</div>
     );
@@ -15,6 +15,5 @@ const Screen = class extends Component {
 };
 
 Screen.displayName = 'Screen';
-
 
 export default Screen;

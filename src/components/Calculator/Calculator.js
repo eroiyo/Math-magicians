@@ -25,7 +25,7 @@ const Calculator = class extends Component {
         total = calculate(this.state, buttonName);
         break;
     }
-    this.setState(total);
+  this.setState(total);
 
   };
 
