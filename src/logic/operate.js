@@ -16,7 +16,11 @@ export default function operate(numberOne, numberTwo, operation) {
     return one.times(two).toString();
   }
   if (operation === '÷') {
+    if(two.toString() === '0'){
+      return 'Error';
+    } else {
     return one.div(two).toString();
+    }
   }
   if (operation === '%') {
     return one.mod(two).toString();
