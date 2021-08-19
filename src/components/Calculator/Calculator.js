@@ -7,7 +7,7 @@ const Calculator = class extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      total: '0', next: null, operation: null, total: '0' 
+      total: '0', next: null, operation: null,
     };
   }
 
@@ -25,7 +25,7 @@ const Calculator = class extends Component {
         total = calculate(this.state, buttonName);
         break;
     }
-  this.setState(total);
+    this.setState(total);
 
   };
 

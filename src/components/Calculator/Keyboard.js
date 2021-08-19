@@ -5,7 +5,7 @@ const Keyboard = class extends Component {
     super(props);
     this.onButtonClick = props.onButtonClick;
   }
-  
+
   render() {
     return (
       <div className="options">
