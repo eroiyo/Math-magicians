@@ -15,7 +15,7 @@ const Calculator = class extends Component {
     let total = {};
     const compare = this.state;
     if (compare.total === 'Error') {
-      this.setState({ total : 0 })
+      this.setState({ total: 0 });
     }
     switch (buttonName) {
       case 'AC':
