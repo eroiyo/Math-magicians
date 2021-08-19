@@ -1,10 +1,8 @@
 import React, { PureComponent } from 'react';
 
-const Calculator = class extends PureComponent {
+const Keyboard = class extends PureComponent {
   render() {
     return (
-      <div className="calculator">
-        <div className="screen">0</div>
         <div className="options">
           <button className="option blue" type="button" value="AC"><span>AC</span></button>
           <button className="option blue" type="button" value="+/-"><span>+/-</span></button>
@@ -30,11 +28,10 @@ const Calculator = class extends PureComponent {
           <button className="option" type="button" value="."><span>.</span></button>
           <button className="option blue" type="button" value="="><span>=</span></button>
         </div>
-      </div>
     );
   }
 };
 
-Calculator.displayName = 'Calculator';
+Keyboard.displayName = 'Keyboard';
 
-export default Calculator;
+export default Keyboard;

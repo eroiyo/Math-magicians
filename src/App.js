@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import './App.css';
-import Calculator from './components/Calculator';
+import Calculator from './components/Calculator/Calculator';
 
 const App = class extends PureComponent {
   render() {
