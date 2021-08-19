@@ -26,7 +26,7 @@ const Calculator = class extends Component {
         break;
     }
     this.setState(total);
-};
+  };
 
   render() {
     const theState = this.state;
