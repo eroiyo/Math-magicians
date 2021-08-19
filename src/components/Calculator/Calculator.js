@@ -13,8 +13,9 @@ const Calculator = class extends Component {
 
   handleClick = (buttonName) => {
     let total = {};
-    if(this.state.total === 'Error'){
-      this.state.total = '0';
+    const compare = this.state;
+    if (compare.total === 'Error') {
+      this.setState({ total : 0 })
     }
     switch (buttonName) {
       case 'AC':
