@@ -18,8 +18,10 @@
 }
 
 .screen {
+  overflow-y: hidden;
+  overflow-x: scroll;
   display: flex;
-  font-size: 80px;
+  font-size: 50px;
   flex-direction: row-reverse;
   background-color: darkgrey;
   width: 100%;
