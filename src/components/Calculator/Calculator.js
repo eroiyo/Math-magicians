@@ -26,7 +26,7 @@ const Calculator = () => {
   return (
     <div className="calculator">
       <Screen total={!next ? total : next} />
-      <Keyboard onButtonClick={handleClick} />
+      <Keyboard onClick={handleClick} />
     </div>
   );
 };
