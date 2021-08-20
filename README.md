@@ -2,7 +2,7 @@
 
 > A one site app that feature an calcutator!
 
-[image](https://user-images.githubusercontent.com/59938389/130214544-8d56af3c-a222-4a39-a000-ae0537a688b1.png)
+![image](https://user-images.githubusercontent.com/59938389/130214544-8d56af3c-a222-4a39-a000-ae0537a688b1.png)
 
 Additional description about the project and its features.
 
