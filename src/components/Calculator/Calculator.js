@@ -1,46 +1,35 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import Keyboard from './Keyboard';
 import Screen from './Screen';
 import calculate from '../../logic/calculate';
 
-const Calculator = class extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      total: '0', next: null, operation: null,
-    };
-  }
-
-  handleClick = (buttonName) => {
-    let total = {};
-    const compare = this.state;
-    if (compare.total === 'Error') {
-      this.setState({ total: 0 });
-    }
-    switch (buttonName) {
-      case 'AC':
-        total = {
-          total: 0,
-          next: null,
-          operation: null,
-        };
-        break;
-      default:
-        total = calculate(this.state, buttonName);
-        break;
-    }
-    this.setState(total);
+const Calculator = () => {
+  const normal ={
+    total: '0',
+    next: null,
+    operation: null,
   };
+  const [data, setData] = useState({ normal });
 
-  render() {
-    const theState = this.state;
-    return (
-      <div className="calculator">
-        <Screen total={!theState.next ? theState.total : theState.next} />
-        <Keyboard onButtonClick={this.handleClick} />
-      </div>
-    );
+  const handleClick = (buttonName) => {
+    let total = {}
+    if (data.total === 'Error') {
+      total = Object.assign(data,normal)
+    } else {
+      total = Object.assign(data,calculate(data, buttonName))
   }
+  setData({ ...data, ...total });
+  console.log(data);
+};
+
+const { total, next } = data;
+
+return (
+  <div className="calculator">
+    <Screen total={!next ? total : next} />
+    <Keyboard onButtonClick={handleClick} />
+  </div>
+);
 };
 
 Calculator.displayName = 'Calculator';

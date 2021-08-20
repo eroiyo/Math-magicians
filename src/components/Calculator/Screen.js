@@ -13,4 +13,9 @@ const Screen = (props) => {
 
 Screen.displayName = 'Screen';
 
+Screen.defaultProps = {
+  total: "0",
+
+}
+
 export default Screen;

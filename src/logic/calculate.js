@@ -16,7 +16,7 @@ function isNumber(item) {
 export default function calculate(obj, buttonName) {
   if (buttonName === 'AC') {
     return {
-      total: null,
+      total: '0',
       next: null,
       operation: null,
     };
@@ -73,6 +73,7 @@ export default function calculate(obj, buttonName) {
         operation: null,
       };
     }
+    // '=' with no operation, nothing to do
     return {};
   }
 
@@ -107,7 +108,7 @@ export default function calculate(obj, buttonName) {
 
   // The user hasn't typed a number yet, just save the operation
   if (!obj.next) {
-    return { operation: buttonName, next: obj.next, total: obj.total };
+    return { operation: buttonName };
   }
 
   // save the operation and shift 'next' into 'total'
