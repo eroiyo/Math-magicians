@@ -5,11 +5,11 @@ const Screen = (props) => {
 
   useEffect(() => {
     changeState(props);
-}, [props])
-    return (
-      <div className="screen">{state.total}</div>
-    );
-}
+  }, [props]);
+  return (
+    <div className="screen">{state.total}</div>
+  );
+};
 
 Screen.displayName = 'Screen';
 
