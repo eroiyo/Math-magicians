@@ -7,15 +7,15 @@ const Screen = (props) => {
     changeState(props);
   }, [props]);
   return (
-    <div className='screen'>{state.total}</div>
+    <div className="screen">{state.total}</div>
   );
 };
 
 Screen.displayName = 'Screen';
 
 Screen.defaultProps = {
-  total: "0",
+  total: '0',
 
-}
+};
 
 export default Screen;
