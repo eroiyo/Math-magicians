@@ -4,7 +4,7 @@ import Screen from './Screen';
 import calculate from '../../logic/calculate';
 
 const Calculator = () => {
-  const normal ={
+  const normal = {
     total: '0',
     next: null,
     operation: null,
@@ -12,24 +12,23 @@ const Calculator = () => {
   const [data, setData] = useState({ normal });
 
   const handleClick = (buttonName) => {
-    let total = {}
+    let total = {};
     if (data.total === 'Error') {
-      total = Object.assign(data,normal)
+      total = Object.assign(data, normal);
     } else {
-      total = Object.assign(data,calculate(data, buttonName))
-  }
-  setData({ ...data, ...total });
-  console.log(data);
-};
+      total = Object.assign(data, calculate(data, buttonName));
+    }
+    setData({ ...data, ...total });
+  };
 
-const { total, next } = data;
+  const { total, next } = data;
 
-return (
-  <div className="calculator">
-    <Screen total={!next ? total : next} />
-    <Keyboard onButtonClick={handleClick} />
-  </div>
-);
+  return (
+    <div className="calculator">
+      <Screen total={!next ? total : next} />
+      <Keyboard onButtonClick={handleClick} />
+    </div>
+  );
 };
 
 Calculator.displayName = 'Calculator';
