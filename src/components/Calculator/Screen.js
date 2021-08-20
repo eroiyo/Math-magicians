@@ -1,19 +1,21 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 
-const Screen = class extends Component {
-  constructor(props) {
-    super(props);
-    this.state = props;
-  }
+const Screen = (props) => {
+  const [state, changeState] = useState(props);
 
-  render() {
-    const theprops = this.props;
-    return (
-      <div className="screen">{theprops.total}</div>
-    );
-  }
+  useEffect(() => {
+    changeState(props);
+  }, [props]);
+  return (
+    <div className="screen">{state.total}</div>
+  );
 };
 
 Screen.displayName = 'Screen';
+
+Screen.defaultProps = {
+  total: '0',
+
+};
 
 export default Screen;
