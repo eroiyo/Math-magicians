@@ -1,29 +1,37 @@
-import logo from './logo.svg';
 import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from 'react-router-dom';
+import CalPage from './components/CalPage';
+import Header from './components/Header';
+import Welcome from './components/Welcome';
+import Quote from './components/Quote';
 
-function App() {
-  return (
+const App = () => (
+  <Router>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit
-          <code>
-            src/App.js
-          </code>
-          and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="App-body">
+        <Header />
+        <div className="content">
+          <Switch>
+            <Route exact path="/">
+              <Welcome />
+            </Route>
+            <Route exact path="/calculator">
+              <CalPage />
+            </Route>
+            <Route exact path="/quote">
+              <Quote />
+            </Route>
+          </Switch>
+        </div>
+      </div>
     </div>
-  );
-}
+  </Router>
+);
+
+App.displayName = 'App';
 
 export default App;
