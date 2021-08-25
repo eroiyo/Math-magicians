@@ -1,13 +1,13 @@
 .first {
-    display: flex;
-    width: 55vw;
-    height: 100%;
+  display: flex;
+  width: 55vw;
+  height: 100%;
 }
 .second {
-    display: flex;
-    width: 45vw;
-    height: 100%;
+  display: flex;
+  width: 45vw;
+  height: 100%;
 }
 #CalPage {
-    display: flex;
+  display: flex;
 }
