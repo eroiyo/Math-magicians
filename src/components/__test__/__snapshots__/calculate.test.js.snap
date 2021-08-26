@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Calculator test test the result of +/- 1`] = `
+Object {
+  "next": "-9",
+}
+`;
+
+exports[`Calculator test testing the AC Button 1`] = `
+Object {
+  "next": null,
+  "operation": null,
+  "total": "0",
+}
+`;
+
+exports[`Calculator test testing the division operation 1`] = `
+Object {
+  "next": null,
+  "operation": null,
+  "total": "2",
+}
+`;
+
+exports[`Calculator test testing the multiplication operation 1`] = `
+Object {
+  "next": null,
+  "operation": null,
+  "total": "8",
+}
+`;
+
+exports[`Calculator test testing the multiplication operation 2`] = `
+Object {
+  "next": null,
+  "operation": null,
+  "total": "0",
+}
+`;
+
+exports[`Calculator test testing the substration operation 1`] = `
+Object {
+  "next": null,
+  "operation": null,
+  "total": "16",
+}
+`;
+
+exports[`Calculator test testing the sum operation 1`] = `
+Object {
+  "next": null,
+  "operation": null,
+  "total": "52",
+}
+`;

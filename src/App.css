@@ -5,7 +5,7 @@
   background-color: white;
 }
 
-.content{
+.content {
   width: 100vw;
   height: 85.5vh;
   display: flex;
@@ -66,10 +66,10 @@ span {
   grid-column: span 2;
 }
 
-h1{
+h1 {
   margin-bottom: 4%;
 }
 
-p{
+p {
   margin-bottom: 2.5%;
 }
