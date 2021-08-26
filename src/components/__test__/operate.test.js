@@ -26,4 +26,9 @@ describe('Testing oparations', () => {
       operate(10, 3, 'g');
     }).toThrow("Unknown operation 'g'");
   });
+  it('Should throw an error if given a wrong number', () => {
+    expect(() => {
+      operate('h', 3, '+');
+    }).toThrow('[big.js] Invalid number');
+  });
 });
