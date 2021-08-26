@@ -21,4 +21,9 @@ describe('Testing oparations', () => {
     const result = operate(10, 3, '%');
     expect(result).toBe('1');
   });
+  it('Should give a 0 error if given a wrong operator', () => {
+    expect(() => {
+      operate(10, 3, 'g');
+    }).toThrow("Unknown operation 'g'");
+  });
 });
