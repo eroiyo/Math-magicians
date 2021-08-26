@@ -7,7 +7,7 @@ const Screen = (props) => {
     changeState(props);
   }, [props]);
   return (
-    <div className="screen">{state.total}</div>
+    <div data-testid="screen" className="screen">{state.total}</div>
   );
 };
 
