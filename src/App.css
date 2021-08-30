@@ -3,6 +3,7 @@
   height: 100vh;
   font-family: "Montserrat", sans-serif;
   background-color: white;
+  overflow-x: hidden;
 }
 
 .content {
