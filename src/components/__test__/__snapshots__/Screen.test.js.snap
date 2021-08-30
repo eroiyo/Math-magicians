@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The screen display data from the props the screen renders correctly 1`] = `
+<div
+  className="screen"
+  data-testid="screen"
+>
+  0
+</div>
+`;

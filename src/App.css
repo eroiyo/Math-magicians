@@ -3,10 +3,11 @@
   height: 100vh;
   font-family: "Montserrat", sans-serif;
   background-color: white;
+  overflow-x: hidden;
 }
 
 .content {
-  width: 100vw;
+  width: 99vw;
   height: 85.5vh;
   display: flex;
 }

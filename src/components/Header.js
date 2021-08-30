@@ -7,6 +7,7 @@ const Header = () => (
   <header>
     <nav className="main-nav">
       <input type="checkbox" id="check" />
+      <i className="fas fa-bars" />
       <a href="index.html" className="logo">Math Magician</a>
       <ul className="navlinks">
         <li><Link className="link" to="/">Home</Link></li>
