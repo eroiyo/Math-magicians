@@ -16,6 +16,10 @@ Additional description about the project and its features.
 
 
 To get a local copy up and running follow these simple example steps.
+### Live Links
+
+Heroku:  https://math-magicians1.herokuapp.com
+Netlify: https://math-magic1an.netlify.app
 
 ### Prerequisites
 
